@@ -30,7 +30,8 @@ namespace DeckOfCards.Models
         public Card deal() {
             Card result = (Card)Cards[Cards.Count - 1];
             Cards.RemoveAt(Cards.Count - 1);
-            Console.WriteLine(result);
+            Console.WriteLine("CARD DETAILS");
+            result.GetInfo();
             return result;
         }
         

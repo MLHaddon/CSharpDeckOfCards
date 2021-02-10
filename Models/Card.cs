@@ -23,6 +23,10 @@ namespace DeckOfCards.Models
                 return val;
             }
         }
+        public virtual void GetInfo() {
+            Console.WriteLine($"Card: {StringVal}");
+            Console.WriteLine($"Suit: {Suit}");
+        }
 
         public Card(string stringValue, string cardSuit, int value) {
             stringVal = stringValue;
